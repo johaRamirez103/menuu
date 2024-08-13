@@ -1,0 +1,109 @@
+.matri{
+width :34px;
+height: 30px;
+color: blueviolet;
+background-color: brown;
+left: 200px;
+top: 100px;
+position: absolute;
+}
+.hora{
+    width :30px;
+    height: 30px;
+    color: blueviolet;
+    background-color: brown;
+    left: 350px;
+    top: 100px;
+    position: absolute;
+    }
+.doc{
+        width :30px;
+        height: 30px;
+        color: blueviolet;
+        background-color: brown;
+        left: 495px;
+        top: 100px;
+        position: absolute;
+        }
+.sec{
+    width :30px;
+    height: 30px;
+     color: blueviolet;
+    background-color: brown;
+    left: 634px;
+    top: 100px;
+     position: absolute;
+}
+.alu{
+    width :30px;
+    height: 30px;
+     color: blueviolet;
+    background-color: brown;
+    left: 778px;
+    top: 100px;
+     position: absolute;
+            }
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(florecita.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+nav{
+    font-family: arial black;
+text-align: center;
+    width: 98%;
+    background-color: rgb(111, 112, 187);
+     margin: 5% 1%;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+nav li{
+    display: inline-block;
+    margin: .5em 1em;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: .5em .7em;
+    font-size: 10px;
+
+}
+nav a:hover{
+    color: rgb(54, 248, 28);
+
+}
+nav a::before,
+nav a::after{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    transition: all ease 0.3s;
+opacity: 0;
+}
+
+nav a::before{
+     right: 0;
+    top: 0;
+    border-top: 2px solid rgb(199, 243, 39);
+    border-right: 2px solid rgb(199, 243, 39); ;
+    transform: translate(-100%,50%);
+}
+
+nav a::after{
+    left: 0;
+    bottom: 0;
+    border-left: 4px solid rgb(199, 243, 39);
+    border-bottom: 2px solid rgb(199, 243, 39);
+    transform: translate(100%,-50%);
+}
+nav a:hover::before,
+nav a:hover::after{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+

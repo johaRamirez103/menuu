@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+    
+</head>
+<body>
+    <h1>Trabajando con funciones</h1>
+    <script src="funciones.js"></script>
+    <script>
+
+        var opcion;
+
+        opcion=parseInt(prompt("ingrese del 1 al 4 "));
+        while(opcion <1 || opcion>4)
+        {
+            opcion=parseInt(prompt("ingrese del 1 al 4 "));
+        }
+
+     switch(opcion)
+     {
+        case 1:{
+        document.write("imprimiendo la los dias de la semana","<br>");
+        document.write("<br>")
+        semanita();
+
+        }
+
+        case 2: 
+        {
+        document.write("<br>")
+        document.write("imprimiendo la frase\n","<br>");
+        document.write("<br>")
+        frase();
+        }
+
+        case 3:
+            {
+                document.write("<br>")
+                document.write("imprimiendo la serie","<br>")
+                document.write("<br>")
+                serie();
+                break;
+            }
+
+            case 4: 
+            {
+                document.write("<br>")
+                document.write("<br>")
+                document.write("imprimiendo la serie en forma inversa","<br>")
+                document.write("<br>")
+                inverso();
+                break;
+            }
+
+        
+     }
+
+        
+        /*document.write("imprimiendo la los dias de la semana","<br>");
+        document.write("<br>")
+        semanita();
+        document.write("<br>")
+        document.write("imprimiendo la frase\n","<br>");
+        document.write("<br>")
+        frase();
+        document.write("<br>")
+        document.write("imprimiendo la serie","<br>")
+        document.write("<br>")
+        serie();
+        document.write("<br>")
+        document.write("<br>")
+        document.write("imprimiendo la serie en forma inversa","<br>")
+        document.write("<br>")
+        inverso();
+        document.write("<br>")*/
+        
+    </script>
+    
+</body>
+</html>

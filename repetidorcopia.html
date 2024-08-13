@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabjando con vectores no inicializados</title>
+</head>
+<body bgcolor="pink">
+    <h1>Localizando el arreglo</h1>
+    <script>
+
+var salario=new Array(5);
+var aumento=new Array(5);
+var aumento2=new Array(5);
+var x=0;//inicializando;
+
+
+while (x<salario.length)//comprobante
+{
+    salario[x]=parseFloat(prompt("Ingrese el salario mayor a 365: "));
+    aumento[x]=salario[x]*1.20;
+    aumento2[x]=salario[x]*1.35;
+
+while (x<salario.length)
+{
+    salario[x]=parseFloat(prompt("Ingrese el salario mayor a 365: "));
+while (salario[x]>=365){
+    aumento[x]=salario[x]*1.20;
+    aumento2[x]=salario[x]*1.35;
+    x++; 
+    }
+}
+ 
+x++;//actualizando  
+}
+
+var j=0;//inicializar
+document.write("______________________________________________________________<br>");
+document.write("<br>");
+document.write("Salario------------------Aumento------------------Aumento 30%<br>")
+document.write("<br>");
+document.write("______________________________________________________________<br>")
+document.write("<br>");
+while(j<salario.length)
+{
+document.write(salario[j]+"-----------------------"+aumento[j].toFixed(2)+"-----------------------"+aumento2[j].toFixed(2)+"<br>");
+document.write("<br>");
+document.write("<br>");
+
+
+    j++;
+}
+document.write("______________________________________________________________<br>");
+
+
+
+
+    </script>
+    
+</body>
+</html>
